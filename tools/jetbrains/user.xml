@@ -1,0 +1,59 @@
+<templateSet group="user">
+  <template name=".sh" value="- $DESCRIPTIONS$ &#10;&#10;```shell&#10;$CONTENTS$&#10;```&#10;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="DESCRIPTIONS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONTENTS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name=".xmlcomment" value="&lt;!-- $FILE_PATH$ --&gt;&#10;$END$" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="FILE_PATH" expression="fileRelativePath()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="Properties" value="false" />
+      <option name="Python" value="false" />
+      <option name="SHELL_SCRIPT" value="false" />
+    </context>
+  </template>
+  <template name=".file" value="&lt;!-- FilePath: $FILE_PATH$ --&gt;&#10;" description="Command the file path" toReformat="false" toShortenFQNames="true">
+    <variable name="FILE_PATH" expression="fileRelativePath()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name=".filequote" value="&gt; File: $FILE_PATH$" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="FILE_PATH" expression="fileRelativePath()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="Properties" value="false" />
+      <option name="Python" value="false" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name=".filecomment" value="// File: $FILE_PATH$" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="FILE_PATH" expression="fileRelativePath()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name=".fileblockcomment" value="# File: $FILE_PATH$" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="FILE_PATH" expression="fileRelativePath()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+      <option name="SHELL_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>

@@ -1,8 +1,4 @@
-Summary
-
-Below is a corrected, updated summary of the key business concepts discussed in the interview—with an eye toward actionable insights for cap10.tech:
-
----
+# Business - Self Interview
 
 ### 1. The Digital Age Is Redefining Business
 

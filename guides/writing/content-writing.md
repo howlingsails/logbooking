@@ -71,5 +71,3 @@ If you keep training yourself to:
 ✔ Write as if talking to your younger self, but **for them**
 
 …you’re going to create **deeply engaging content** that actually resonates.
-
-What’s the next step for you? Are you planning to refine your writing style further or start testing these shifts in real content?

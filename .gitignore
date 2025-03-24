@@ -1,3 +1,6 @@
 # Ignore all files with the .key extension
 *.key
 
+/guides/software-tools/automation-tools/workato/workato_exports/
+/guides/software-tools/automation-tools/workato/_stratch_troubleshooting_2025-03.md
+/guides/software-tools/automation-tools/workato/export_workato_manifest.sh

@@ -1,0 +1,10 @@
+templateSet:
+  _count: 1
+  templateSet/template:
+    _count: 3
+    templateSet/template/variable:
+      _count: 3
+    templateSet/template/context:
+      _count: 1
+      templateSet/template/context/option:
+        _count: 12

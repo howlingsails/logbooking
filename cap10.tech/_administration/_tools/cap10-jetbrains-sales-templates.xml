@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="SalesCommunicationTemplates">
+    <!-- 1. Initial Contact Template -->
+    <template name="cap10-sales-initial-contact" value="Initial Contact with $CLIENT$ on $DATE$:
+Introduction: $INTRO$
+Products/Services: $PRODUCTS$
+Notes: $NOTES$
+Next Steps: $NEXT$" description="Log the first interaction with a prospective client" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="CLIENT" expression="" defaultValue="Client Name" alwaysStopAt="true" />
+        <variable name="INTRO" expression="" defaultValue="Brief introduction overview" alwaysStopAt="true" />
+        <variable name="PRODUCTS" expression="" defaultValue="Products or services discussed" alwaysStopAt="true" />
+        <variable name="NOTES" expression="" defaultValue="Any additional notes" alwaysStopAt="true" />
+        <variable name="NEXT" expression="" defaultValue="Follow-up actions" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 2. Follow-Up Email Template -->
+    <template name="cap10-sales-followup-email" value="Follow-Up Email to $CLIENT$ on $DATE$:
+Subject: $SUBJECT$
+Summary: $SUMMARY$
+Action Items: $ACTION$" description="Track follow-up emails after initial contact or meetings" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="CLIENT" expression="" defaultValue="Client Name" alwaysStopAt="true" />
+        <variable name="SUBJECT" expression="" defaultValue="Email Subject" alwaysStopAt="true" />
+        <variable name="SUMMARY" expression="" defaultValue="Email summary or key points" alwaysStopAt="true" />
+        <variable name="ACTION" expression="" defaultValue="Next steps or requests" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 3. Meeting Minutes Template -->
+    <template name="cap10-sales-meeting" value="Sales Meeting with $CLIENT$ on $DATE$:
+Location: $LOCATION$
+Attendees: $ATTENDEES$
+Discussion Points: $DISCUSSION$
+Decisions: $DECISIONS$
+Action Items: $ACTION$" description="Record details from sales meetings" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="CLIENT" expression="" defaultValue="Client Name" alwaysStopAt="true" />
+        <variable name="LOCATION" expression="" defaultValue="Meeting Location" alwaysStopAt="true" />
+        <variable name="ATTENDEES" expression="" defaultValue="Names of participants" alwaysStopAt="true" />
+        <variable name="DISCUSSION" expression="" defaultValue="Key discussion topics" alwaysStopAt="true" />
+        <variable name="DECISIONS" expression="" defaultValue="Decisions reached" alwaysStopAt="true" />
+        <variable name="ACTION" expression="" defaultValue="Follow-up actions" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 4. Proposal Discussion Template -->
+    <template name="cap10-sales-proposal" value="Proposal Discussion with $CLIENT$ on $DATE$:
+Proposal: $PROPOSAL$
+Highlights: $HIGHLIGHTS$
+Feedback: $FEEDBACK$
+Next Steps: $NEXT$" description="Document proposal discussions with clients" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="CLIENT" expression="" defaultValue="Client Name" alwaysStopAt="true" />
+        <variable name="PROPOSAL" expression="" defaultValue="Proposal Title/ID" alwaysStopAt="true" />
+        <variable name="HIGHLIGHTS" expression="" defaultValue="Key points discussed" alwaysStopAt="true" />
+        <variable name="FEEDBACK" expression="" defaultValue="Client feedback" alwaysStopAt="true" />
+        <variable name="NEXT" expression="" defaultValue="Planned follow-up actions" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 5. Product Demo Template -->
+    <template name="cap10-sales-demo" value="Product Demo for $CLIENT$ on $DATE$:
+Product: $PRODUCT$
+Demo Highlights: $HIGHLIGHTS$
+Client Reactions: $REACTIONS$
+Next Steps: $NEXT$" description="Record details and client reactions during product demos" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="CLIENT" expression="" defaultValue="Client Name" alwaysStopAt="true" />
+        <variable name="PRODUCT" expression="" defaultValue="Product/Service Name" alwaysStopAt="true" />
+        <variable name="HIGHLIGHTS" expression="" defaultValue="Key demo highlights" alwaysStopAt="true" />
+        <variable name="REACTIONS" expression="" defaultValue="Client reactions or questions" alwaysStopAt="true" />
+        <variable name="NEXT" expression="" defaultValue="Follow-up actions" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 6. Negotiation Session Template -->
+    <template name="cap10-sales-negotiation" value="Negotiation Session with $CLIENT$ on $DATE$:
+Discussion Points: $POINTS$
+Offers/Counteroffers: $OFFERS$
+Concerns: $CONCERNS$
+Next Steps: $NEXT$" description="Log details from negotiation sessions" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="CLIENT" expression="" defaultValue="Client Name" alwaysStopAt="true" />
+        <variable name="POINTS" expression="" defaultValue="Key discussion points" alwaysStopAt="true" />
+        <variable name="OFFERS" expression="" defaultValue="Offers made" alwaysStopAt="true" />
+        <variable name="CONCERNS" expression="" defaultValue="Concerns raised" alwaysStopAt="true" />
+        <variable name="NEXT" expression="" defaultValue="Agreed follow-up actions" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 7. Deal Closing Template -->
+    <template name="cap10-sales-closing" value="Deal Closing with $CLIENT$ on $DATE$:
+Summary: $SUMMARY$
+Final Terms: $TERMS$
+Client Agreement: $AGREEMENT$
+Next Steps: $NEXT$" description="Record final discussions when closing a deal" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="CLIENT" expression="" defaultValue="Client Name" alwaysStopAt="true" />
+        <variable name="SUMMARY" expression="" defaultValue="Summary of discussions" alwaysStopAt="true" />
+        <variable name="TERMS" expression="" defaultValue="Final terms agreed upon" alwaysStopAt="true" />
+        <variable name="AGREEMENT" expression="" defaultValue="Client's agreement confirmation" alwaysStopAt="true" />
+        <variable name="NEXT" expression="" defaultValue="Next steps (e.g., contract signing)" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 8. Contract Review Template -->
+    <template name="cap10-sales-contract" value="Contract Review with $CLIENT$ on $DATE$:
+Contract: $CONTRACT$
+Review Summary: $REVIEW$
+Client Concerns: $CONCERNS$
+Next Steps: $NEXT$" description="Document contract review sessions" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="CLIENT" expression="" defaultValue="Client Name" alwaysStopAt="true" />
+        <variable name="CONTRACT" expression="" defaultValue="Contract Title/ID" alwaysStopAt="true" />
+        <variable name="REVIEW" expression="" defaultValue="Points reviewed" alwaysStopAt="true" />
+        <variable name="CONCERNS" expression="" defaultValue="Concerns or amendments" alwaysStopAt="true" />
+        <variable name="NEXT" expression="" defaultValue="Follow-up actions" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 9. Post-Sale Feedback Template -->
+    <template name="cap10-sales-feedback" value="Post-Sale Feedback from $CLIENT$ on $DATE$:
+Feedback Summary: $FEEDBACK$
+Satisfaction Level: $SATISFACTION$
+Areas for Improvement: $IMPROVE$
+Next Steps: $NEXT$" description="Collect and log client feedback after a sale" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="CLIENT" expression="" defaultValue="Client Name" alwaysStopAt="true" />
+        <variable name="FEEDBACK" expression="" defaultValue="Client feedback" alwaysStopAt="true" />
+        <variable name="SATISFACTION" expression="" defaultValue="Rating or satisfaction level" alwaysStopAt="true" />
+        <variable name="IMPROVE" expression="" defaultValue="Suggested improvements" alwaysStopAt="true" />
+        <variable name="NEXT" expression="" defaultValue="Follow-up actions" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 10. Sales Support Communication Template -->
+    <template name="cap10-sales-support" value="Sales Support Communication with $CLIENT$ on $DATE$:
+Issue/Request: $ISSUE$
+Support Provided: $SUPPORT$
+Resolution: $RESOLUTION$
+Next Steps: $NEXT$" description="Log support interactions related to sales inquiries" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="CLIENT" expression="" defaultValue="Client Name" alwaysStopAt="true" />
+        <variable name="ISSUE" expression="" defaultValue="Issue or request details" alwaysStopAt="true" />
+        <variable name="SUPPORT" expression="" defaultValue="Support actions taken" alwaysStopAt="true" />
+        <variable name="RESOLUTION" expression="" defaultValue="Outcome or resolution" alwaysStopAt="true" />
+        <variable name="NEXT" expression="" defaultValue="Follow-up actions" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+</templateSet>

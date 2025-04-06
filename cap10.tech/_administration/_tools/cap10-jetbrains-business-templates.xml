@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="BusinessCommunicationTemplates">
+    <!-- 1. Introduction Call Template -->
+    <template name="cap10-partner-intro-call" value="Introduction Call with $PARTNER$ on $DATE$:
+Agenda: $AGENDA$
+Notes: $NOTES$
+Next Steps: $NEXT$" description="Log an introductory call with a business partner" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="PARTNER" expression="" defaultValue="Partner Name" alwaysStopAt="true" />
+        <variable name="AGENDA" expression="" defaultValue="Discuss mutual interests and opportunities" alwaysStopAt="true" />
+        <variable name="NOTES" expression="" defaultValue="Key discussion points" alwaysStopAt="true" />
+        <variable name="NEXT" expression="" defaultValue="Follow-up actions" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 2. Email Follow-Up Template -->
+    <template name="cap10-partner-email-followup" value="Email Follow-Up with $PARTNER$ on $DATE$:
+Subject: $SUBJECT$
+Summary: $SUMMARY$
+Action Items: $ACTION$" description="Track follow-up emails with business partners" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="PARTNER" expression="" defaultValue="Partner Name" alwaysStopAt="true" />
+        <variable name="SUBJECT" expression="" defaultValue="Email Subject" alwaysStopAt="true" />
+        <variable name="SUMMARY" expression="" defaultValue="Brief summary of the email" alwaysStopAt="true" />
+        <variable name="ACTION" expression="" defaultValue="Next steps or actions required" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 3. Meeting Minutes Template -->
+    <template name="cap10-partner-meeting" value="Meeting with $PARTNER$ on $DATE$:
+Location: $LOCATION$
+Attendees: $ATTENDEES$
+Discussion Points: $DISCUSSION$
+Decisions Made: $DECISIONS$
+Action Items: $ACTION$" description="Record detailed meeting minutes with business partners" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="PARTNER" expression="" defaultValue="Partner Name" alwaysStopAt="true" />
+        <variable name="LOCATION" expression="" defaultValue="Meeting Location" alwaysStopAt="true" />
+        <variable name="ATTENDEES" expression="" defaultValue="Names of participants" alwaysStopAt="true" />
+        <variable name="DISCUSSION" expression="" defaultValue="Key discussion topics" alwaysStopAt="true" />
+        <variable name="DECISIONS" expression="" defaultValue="Decisions reached" alwaysStopAt="true" />
+        <variable name="ACTION" expression="" defaultValue="Follow-up actions" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 4. Proposal Discussion Template -->
+    <template name="cap10-partner-proposal-discussion" value="Proposal Discussion with $PARTNER$ on $DATE$:
+Proposal: $PROPOSAL$
+Key Points: $KEYPOINTS$
+Feedback: $FEEDBACK$
+Next Steps: $NEXT$" description="Document discussions related to proposals with partners" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="PARTNER" expression="" defaultValue="Partner Name" alwaysStopAt="true" />
+        <variable name="PROPOSAL" expression="" defaultValue="Proposal Title or ID" alwaysStopAt="true" />
+        <variable name="KEYPOINTS" expression="" defaultValue="Main discussion points" alwaysStopAt="true" />
+        <variable name="FEEDBACK" expression="" defaultValue="Feedback received" alwaysStopAt="true" />
+        <variable name="NEXT" expression="" defaultValue="Planned follow-up" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 5. Contract Review Template -->
+    <template name="cap10-partner-contract-review" value="Contract Review with $PARTNER$ on $DATE$:
+Contract: $CONTRACT$
+Review Points: $REVIEW$
+Concerns: $CONCERNS$
+Next Steps: $NEXT$" description="Log contract review sessions with partners" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="PARTNER" expression="" defaultValue="Partner Name" alwaysStopAt="true" />
+        <variable name="CONTRACT" expression="" defaultValue="Contract Name/ID" alwaysStopAt="true" />
+        <variable name="REVIEW" expression="" defaultValue="Points reviewed" alwaysStopAt="true" />
+        <variable name="CONCERNS" expression="" defaultValue="Issues or concerns" alwaysStopAt="true" />
+        <variable name="NEXT" expression="" defaultValue="Follow-up actions" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 6. Status Update Template -->
+    <template name="cap10-partner-status-update" value="Status Update with $PARTNER$ on $DATE$:
+Current Status: $STATUS$
+Progress: $PROGRESS$
+Issues: $ISSUES$
+Next Steps: $NEXT$" description="Record periodic status updates from business partners" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="PARTNER" expression="" defaultValue="Partner Name" alwaysStopAt="true" />
+        <variable name="STATUS" expression="" defaultValue="Current project status" alwaysStopAt="true" />
+        <variable name="PROGRESS" expression="" defaultValue="Progress details" alwaysStopAt="true" />
+        <variable name="ISSUES" expression="" defaultValue="Issues encountered" alwaysStopAt="true" />
+        <variable name="NEXT" expression="" defaultValue="Planned next steps" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 7. Feedback Session Template -->
+    <template name="cap10-partner-feedback-session" value="Feedback Session with $PARTNER$ on $DATE$:
+Feedback: $FEEDBACK$
+Areas for Improvement: $IMPROVE$
+Action Items: $ACTION$" description="Log feedback sessions with business partners" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="PARTNER" expression="" defaultValue="Partner Name" alwaysStopAt="true" />
+        <variable name="FEEDBACK" expression="" defaultValue="Feedback details" alwaysStopAt="true" />
+        <variable name="IMPROVE" expression="" defaultValue="Improvement areas" alwaysStopAt="true" />
+        <variable name="ACTION" expression="" defaultValue="Follow-up actions" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 8. Support Ticket Template -->
+    <template name="cap10-partner-support-ticket" value="Support Ticket with $PARTNER$ on $DATE$:
+Issue Summary: $ISSUE$
+Support Details: $SUPPORT$
+Resolution: $RESOLUTION$
+Next Steps: $NEXT$" description="Document support-related communications with business partners" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="PARTNER" expression="" defaultValue="Partner Name" alwaysStopAt="true" />
+        <variable name="ISSUE" expression="" defaultValue="Summary of issue" alwaysStopAt="true" />
+        <variable name="SUPPORT" expression="" defaultValue="Support provided" alwaysStopAt="true" />
+        <variable name="RESOLUTION" expression="" defaultValue="Resolution details" alwaysStopAt="true" />
+        <variable name="NEXT" expression="" defaultValue="Next steps" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 9. Escalation Template -->
+    <template name="cap10-partner-escalation" value="Escalation with $PARTNER$ on $DATE$:
+Issue: $ISSUE$
+Details: $DETAILS$
+Involved Stakeholders: $STAKEHOLDERS$
+Resolution Plan: $PLAN$" description="Record escalation communications with business partners" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="PARTNER" expression="" defaultValue="Partner Name" alwaysStopAt="true" />
+        <variable name="ISSUE" expression="" defaultValue="Description of issue" alwaysStopAt="true" />
+        <variable name="DETAILS" expression="" defaultValue="Detailed escalation notes" alwaysStopAt="true" />
+        <variable name="STAKEHOLDERS" expression="" defaultValue="Names of involved parties" alwaysStopAt="true" />
+        <variable name="PLAN" expression="" defaultValue="Proposed resolution plan" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 10. Networking Event Template -->
+    <template name="cap10-partner-networking-event" value="Networking Event with $PARTNER$ on $DATE$:
+Event: $EVENT$
+Venue: $VENUE$
+Attendees: $ATTENDEES$
+Key Takeaways: $TAKEAWAYS$
+Follow-Up: $FOLLOWUP$" description="Log networking event details with business partners" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="PARTNER" expression="" defaultValue="Partner Name" alwaysStopAt="true" />
+        <variable name="EVENT" expression="" defaultValue="Event Name" alwaysStopAt="true" />
+        <variable name="VENUE" expression="" defaultValue="Event Venue" alwaysStopAt="true" />
+        <variable name="ATTENDEES" expression="" defaultValue="List of attendees" alwaysStopAt="true" />
+        <variable name="TAKEAWAYS" expression="" defaultValue="Key insights" alwaysStopAt="true" />
+        <variable name="FOLLOWUP" expression="" defaultValue="Next steps" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+</templateSet>

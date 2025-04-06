@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="DevelopmentCommunicationTemplates">
+    <!-- 1. New Feature Discussion Template -->
+    <template name="cap10-development-new-feature" value="New Feature Discussion on $DATE$:
+Feature Name: $FEATURE$
+Discussion Points: $POINTS$
+Challenges: $CHALLENGES$
+Action Items: $ACTION$" description="Record discussions about a new feature" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="FEATURE" expression="" defaultValue="Feature Name" alwaysStopAt="true" />
+        <variable name="POINTS" expression="" defaultValue="Key discussion points" alwaysStopAt="true" />
+        <variable name="CHALLENGES" expression="" defaultValue="Challenges identified" alwaysStopAt="true" />
+        <variable name="ACTION" expression="" defaultValue="Next steps" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 2. Bug Report Discussion Template -->
+    <template name="cap10-development-bug-report" value="Bug Report Discussion on $DATE$:
+Bug ID/Title: $BUG$
+Description: $DESCRIPTION$
+Steps to Reproduce: $STEPS$
+Resolution/Action Items: $ACTION$" description="Discuss and log details of a bug report" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="BUG" expression="" defaultValue="Bug ID or Title" alwaysStopAt="true" />
+        <variable name="DESCRIPTION" expression="" defaultValue="Brief bug description" alwaysStopAt="true" />
+        <variable name="STEPS" expression="" defaultValue="Steps to reproduce" alwaysStopAt="true" />
+        <variable name="ACTION" expression="" defaultValue="Proposed resolution or action items" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 3. Code Review Template -->
+    <template name="cap10-development-code-review" value="Code Review on $DATE$:
+Review For: $MODULE$
+Reviewer: $REVIEWER$
+Key Findings: $FINDINGS$
+Recommendations: $RECOMMENDATIONS$" description="Log code review details and recommendations" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="MODULE" expression="" defaultValue="Module/Component Name" alwaysStopAt="true" />
+        <variable name="REVIEWER" expression="" defaultValue="Reviewer Name" alwaysStopAt="true" />
+        <variable name="FINDINGS" expression="" defaultValue="Key findings" alwaysStopAt="true" />
+        <variable name="RECOMMENDATIONS" expression="" defaultValue="Suggestions for improvement" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 4. Sprint Planning Template -->
+    <template name="cap10-development-sprint-planning" value="Sprint Planning on $DATE$:
+Sprint #: $SPRINT$
+Goals: $GOALS$
+Backlog Items: $BACKLOG$
+Potential Blockers: $BLOCKERS$
+Action Items: $ACTION$" description="Plan and record details for sprint planning" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="SPRINT" expression="" defaultValue="Sprint Number" alwaysStopAt="true" />
+        <variable name="GOALS" expression="" defaultValue="Sprint goals" alwaysStopAt="true" />
+        <variable name="BACKLOG" expression="" defaultValue="Key backlog items" alwaysStopAt="true" />
+        <variable name="BLOCKERS" expression="" defaultValue="Identified blockers" alwaysStopAt="true" />
+        <variable name="ACTION" expression="" defaultValue="Follow-up actions" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 5. Daily Stand-Up Template -->
+    <template name="cap10-development-standup" value="Daily Stand-Up on $DATE$:
+What was done: $DONE$
+Plans for today: $PLANS$
+Blockers: $BLOCKERS$" description="Log daily stand-up meeting details" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="DONE" expression="" defaultValue="Yesterday's achievements" alwaysStopAt="true" />
+        <variable name="PLANS" expression="" defaultValue="Today's plan" alwaysStopAt="true" />
+        <variable name="BLOCKERS" expression="" defaultValue="Any blockers" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 6. Sprint Retrospective Template -->
+    <template name="cap10-development-retrospective" value="Sprint Retrospective on $DATE$:
+Sprint #: $SPRINT$
+What Went Well: $WELL$
+Challenges: $CHALLENGES$
+Action Items: $ACTION$" description="Capture feedback during sprint retrospectives" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="SPRINT" expression="" defaultValue="Sprint Number" alwaysStopAt="true" />
+        <variable name="WELL" expression="" defaultValue="What went well" alwaysStopAt="true" />
+        <variable name="CHALLENGES" expression="" defaultValue="Challenges faced" alwaysStopAt="true" />
+        <variable name="ACTION" expression="" defaultValue="Improvement actions" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 7. Deployment Review Template -->
+    <template name="cap10-development-deployment-review" value="Deployment Review on $DATE$:
+Deployment Version: $VERSION$
+Deployment Environment: $ENVIRONMENT$
+Issues Encountered: $ISSUES$
+Post-Deployment Actions: $ACTION$" description="Review deployment process and outcomes" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="VERSION" expression="" defaultValue="Version Number" alwaysStopAt="true" />
+        <variable name="ENVIRONMENT" expression="" defaultValue="Environment (e.g., production)" alwaysStopAt="true" />
+        <variable name="ISSUES" expression="" defaultValue="Issues encountered" alwaysStopAt="true" />
+        <variable name="ACTION" expression="" defaultValue="Follow-up actions" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 8. Technical Debt Discussion Template -->
+    <template name="cap10-development-tech-debt" value="Technical Debt Discussion on $DATE$:
+Area: $AREA$
+Issue: $ISSUE$
+Impact: $IMPACT$
+Resolution Plan: $PLAN$" description="Document discussions regarding technical debt" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="AREA" expression="" defaultValue="Affected area/module" alwaysStopAt="true" />
+        <variable name="ISSUE" expression="" defaultValue="Description of technical debt" alwaysStopAt="true" />
+        <variable name="IMPACT" expression="" defaultValue="Impact on project" alwaysStopAt="true" />
+        <variable name="PLAN" expression="" defaultValue="Proposed resolution plan" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 9. Architecture Review Template -->
+    <template name="cap10-development-architecture-review" value="Architecture Review on $DATE$:
+System/Component: $SYSTEM$
+Review Summary: $SUMMARY$
+Pros & Cons: $PROSCONS$
+Action Items: $ACTION$" description="Log details from architecture reviews" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="SYSTEM" expression="" defaultValue="System or component" alwaysStopAt="true" />
+        <variable name="SUMMARY" expression="" defaultValue="Review summary" alwaysStopAt="true" />
+        <variable name="PROSCONS" expression="" defaultValue="Pros &amp; Cons" alwaysStopAt="true" />
+        <variable name="ACTION" expression="" defaultValue="Next steps" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 10. DevOps Incident Review Template -->
+    <template name="cap10-development-devops-incident" value="DevOps Incident Review on $DATE$:
+Incident ID: $INCIDENT$
+Description: $DESCRIPTION$
+Root Cause: $ROOT$
+Resolution: $RESOLUTION$
+Follow-Up Actions: $ACTION$" description="Document and review DevOps incidents" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="INCIDENT" expression="" defaultValue="Incident ID or title" alwaysStopAt="true" />
+        <variable name="DESCRIPTION" expression="" defaultValue="Brief incident description" alwaysStopAt="true" />
+        <variable name="ROOT" expression="" defaultValue="Root cause analysis" alwaysStopAt="true" />
+        <variable name="RESOLUTION" expression="" defaultValue="Resolution details" alwaysStopAt="true" />
+        <variable name="ACTION" expression="" defaultValue="Follow-up actions" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+</templateSet>

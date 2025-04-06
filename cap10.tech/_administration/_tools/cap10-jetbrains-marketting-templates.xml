@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="MarketCommunicationTemplates">
+    <!-- 1. Campaign Planning Template -->
+    <template name="cap10-market-campaign-planning" value="Campaign Planning on $DATE$:
+Campaign Name: $CAMPAIGN$
+Objective: $OBJECTIVE$
+Target Audience: $AUDIENCE$
+Key Strategies: $STRATEGIES$
+Budget: $BUDGET$
+Notes: $NOTES$" description="Plan a new marketing campaign" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="CAMPAIGN" expression="" defaultValue="Campaign Name" alwaysStopAt="true" />
+        <variable name="OBJECTIVE" expression="" defaultValue="Campaign objectives" alwaysStopAt="true" />
+        <variable name="AUDIENCE" expression="" defaultValue="Target audience" alwaysStopAt="true" />
+        <variable name="STRATEGIES" expression="" defaultValue="Key strategies to be used" alwaysStopAt="true" />
+        <variable name="BUDGET" expression="" defaultValue="Allocated budget" alwaysStopAt="true" />
+        <variable name="NOTES" expression="" defaultValue="Additional notes" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 2. Campaign Review Template -->
+    <template name="cap10-market-campaign-review" value="Campaign Review on $DATE$:
+Campaign Name: $CAMPAIGN$
+Performance Metrics: $METRICS$
+Results: $RESULTS$
+Key Learnings: $LEARNINGS$
+Next Steps: $NEXT$" description="Review and evaluate the performance of a marketing campaign" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="CAMPAIGN" expression="" defaultValue="Campaign Name" alwaysStopAt="true" />
+        <variable name="METRICS" expression="" defaultValue="Performance metrics" alwaysStopAt="true" />
+        <variable name="RESULTS" expression="" defaultValue="Campaign results" alwaysStopAt="true" />
+        <variable name="LEARNINGS" expression="" defaultValue="Key learnings" alwaysStopAt="true" />
+        <variable name="NEXT" expression="" defaultValue="Planned next steps" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 3. Market Research Template -->
+    <template name="cap10-market-research" value="Market Research on $DATE$:
+Topic: $TOPIC$
+Objectives: $OBJECTIVES$
+Key Findings: $FINDINGS$
+Sources: $SOURCES$
+Implications: $IMPLICATIONS$" description="Document findings from market research" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="TOPIC" expression="" defaultValue="Research Topic" alwaysStopAt="true" />
+        <variable name="OBJECTIVES" expression="" defaultValue="Research objectives" alwaysStopAt="true" />
+        <variable name="FINDINGS" expression="" defaultValue="Key findings" alwaysStopAt="true" />
+        <variable name="SOURCES" expression="" defaultValue="Data sources" alwaysStopAt="true" />
+        <variable name="IMPLICATIONS" expression="" defaultValue="Implications for strategy" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 4. Content Calendar Template -->
+    <template name="cap10-market-content-calendar" value="Content Calendar Entry for $DATE$:
+Content Title: $TITLE$
+Platform: $PLATFORM$
+Publish Date: $PUBDATE$
+Target Audience: $AUDIENCE$
+Call-to-Action: $CTA$
+Notes: $NOTES$" description="Plan content marketing schedule and details" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="TITLE" expression="" defaultValue="Content Title" alwaysStopAt="true" />
+        <variable name="PLATFORM" expression="" defaultValue="Publishing platform" alwaysStopAt="true" />
+        <variable name="PUBDATE" expression="" defaultValue="Scheduled publish date" alwaysStopAt="true" />
+        <variable name="AUDIENCE" expression="" defaultValue="Target audience" alwaysStopAt="true" />
+        <variable name="CTA" expression="" defaultValue="Call-to-action" alwaysStopAt="true" />
+        <variable name="NOTES" expression="" defaultValue="Additional notes" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 5. Social Media Engagement Template -->
+    <template name="cap10-market-social-engagement" value="Social Media Engagement on $DATE$:
+Platform: $PLATFORM$
+Campaign/Topic: $TOPIC$
+Engagement Metrics: $METRICS$
+Audience Feedback: $FEEDBACK$
+Follow-Up Actions: $NEXT$" description="Track social media engagement details" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="PLATFORM" expression="" defaultValue="Social media platform" alwaysStopAt="true" />
+        <variable name="TOPIC" expression="" defaultValue="Campaign or discussion topic" alwaysStopAt="true" />
+        <variable name="METRICS" expression="" defaultValue="Engagement metrics" alwaysStopAt="true" />
+        <variable name="FEEDBACK" expression="" defaultValue="Audience feedback" alwaysStopAt="true" />
+        <variable name="NEXT" expression="" defaultValue="Follow-up actions" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 6. Lead Generation Template -->
+    <template name="cap10-market-lead-generation" value="Lead Generation on $DATE$:
+Lead Source: $SOURCE$
+Campaign: $CAMPAIGN$
+Lead Details: $DETAILS$
+Contact Info: $CONTACT$
+Follow-Up: $NEXT$" description="Record details about new leads generated" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="SOURCE" expression="" defaultValue="Lead source" alwaysStopAt="true" />
+        <variable name="CAMPAIGN" expression="" defaultValue="Related campaign" alwaysStopAt="true" />
+        <variable name="DETAILS" expression="" defaultValue="Lead details" alwaysStopAt="true" />
+        <variable name="CONTACT" expression="" defaultValue="Contact information" alwaysStopAt="true" />
+        <variable name="NEXT" expression="" defaultValue="Next follow-up actions" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 7. Event Promotion Template -->
+    <template name="cap10-market-event-promotion" value="Event Promotion on $DATE$:
+Event Name: $EVENT$
+Venue: $VENUE$
+Target Audience: $AUDIENCE$
+Promotional Channels: $CHANNELS$
+Expected Outcomes: $OUTCOMES$
+Notes: $NOTES$" description="Plan and track promotional activities for an event" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="EVENT" expression="" defaultValue="Event Name" alwaysStopAt="true" />
+        <variable name="VENUE" expression="" defaultValue="Event venue" alwaysStopAt="true" />
+        <variable name="AUDIENCE" expression="" defaultValue="Target audience" alwaysStopAt="true" />
+        <variable name="CHANNELS" expression="" defaultValue="Promotional channels" alwaysStopAt="true" />
+        <variable name="OUTCOMES" expression="" defaultValue="Expected outcomes" alwaysStopAt="true" />
+        <variable name="NOTES" expression="" defaultValue="Additional notes" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 8. Product Launch Template -->
+    <template name="cap10-market-product-launch" value="Product Launch on $DATE$:
+Product Name: $PRODUCT$
+Launch Objectives: $OBJECTIVES$
+Key Messages: $MESSAGES$
+Marketing Channels: $CHANNELS$
+Launch Date: $LAUNCHDATE$
+Notes: $NOTES$" description="Document details for a product launch" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="PRODUCT" expression="" defaultValue="Product Name" alwaysStopAt="true" />
+        <variable name="OBJECTIVES" expression="" defaultValue="Launch objectives" alwaysStopAt="true" />
+        <variable name="MESSAGES" expression="" defaultValue="Key marketing messages" alwaysStopAt="true" />
+        <variable name="CHANNELS" expression="" defaultValue="Marketing channels" alwaysStopAt="true" />
+        <variable name="LAUNCHDATE" expression="" defaultValue="Scheduled launch date" alwaysStopAt="true" />
+        <variable name="NOTES" expression="" defaultValue="Additional notes" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 9. Brand Collaboration Template -->
+    <template name="cap10-market-brand-collab" value="Brand Collaboration on $DATE$:
+Partner Brand: $BRAND$
+Collaboration Objectives: $OBJECTIVES$
+Proposed Activities: $ACTIVITIES$
+Roles & Responsibilities: $ROLES$
+Timeline: $TIMELINE$
+Notes: $NOTES$" description="Record details about a brand collaboration initiative" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="BRAND" expression="" defaultValue="Partner Brand" alwaysStopAt="true" />
+        <variable name="OBJECTIVES" expression="" defaultValue="Collaboration objectives" alwaysStopAt="true" />
+        <variable name="ACTIVITIES" expression="" defaultValue="Proposed collaborative activities" alwaysStopAt="true" />
+        <variable name="ROLES" expression="" defaultValue="Roles & responsibilities" alwaysStopAt="true" />
+        <variable name="TIMELINE" expression="" defaultValue="Project timeline" alwaysStopAt="true" />
+        <variable name="NOTES" expression="" defaultValue="Additional notes" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+
+    <!-- 10. Advertising Strategy Template -->
+    <template name="cap10-market-advertising-strategy" value="Advertising Strategy on $DATE$:
+Campaign: $CAMPAIGN$
+Platforms: $PLATFORMS$
+Budget: $BUDGET$
+Target Metrics: $METRICS$
+Creative Concepts: $CONCEPTS$
+Next Steps: $NEXT$" description="Plan an advertising strategy for marketing communications" toReformat="true" toShortenFQNames="true">
+        <variable name="DATE" expression="date()" defaultValue="YYYY-MM-DD" alwaysStopAt="false" />
+        <variable name="CAMPAIGN" expression="" defaultValue="Campaign Name" alwaysStopAt="true" />
+        <variable name="PLATFORMS" expression="" defaultValue="Advertising platforms" alwaysStopAt="true" />
+        <variable name="BUDGET" expression="" defaultValue="Budget details" alwaysStopAt="true" />
+        <variable name="METRICS" expression="" defaultValue="Target performance metrics" alwaysStopAt="true" />
+        <variable name="CONCEPTS" expression="" defaultValue="Creative concepts" alwaysStopAt="true" />
+        <variable name="NEXT" expression="" defaultValue="Follow-up actions" alwaysStopAt="true" />
+        <context>
+            <option name="TEXT" value="true" />
+        </context>
+    </template>
+</templateSet>

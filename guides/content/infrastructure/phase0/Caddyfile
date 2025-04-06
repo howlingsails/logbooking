@@ -1,0 +1,4 @@
+vault.local {
+    reverse_proxy vault:8200
+    tls youremail@example.com
+}

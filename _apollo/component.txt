@@ -1,0 +1,43 @@
+#	Reference	Qty	Value	Desciption	 	Mfr	Mfr #		ALT
+6012	 C6	1	0.1uF 25V	Capacitor SMD 1206		Generic
+4254	C2	1	 1UF 25V	Capacitor SMD 1206		Generic
+6679	C5, C9	2	10uF 16V	Capacitor SMD 1206		Generic
+22480	C7	1	.22UF 630V	CAP POLY 	Thru-hole	Panasonic	ECW-FA2J224J
+7387	C8	1	470uF 25V	Capacitor Radial_D10.0mm_P5.00mm 20% or better		Generic
+3300	D1	1	BAT54A	Diode Schottky sot-23		Generic
+4029	D3	1	BAV70	Dio SMD SOT-23		Generic
+2029	D4, D5	2	S1G	Rectifier 400v 1A SMT		Generic
+22375	DM1	4	STANDOFFS 	Nylon .125" M/M		Keystone	8888
+22378	DM1	1	Conn	16 PIN HEADER x .1"		Generic
+22290	DM1	1	AMC0801A	Display 8x1 Character Mod		Orient Display	AMC0801AR-B-Y6WFDY-STY 		AMC081AR-B-Y6WFDY-STL
+22478	HS1	1	Heatsink	2.5" X 1" X .5" AL Black TO-220		Wakefield	657-25abpe
+20323	J1	1	Conn_01x04	Connector 1x4 2.50mm Vertical		JST	B4B-XH-A
+4353	J2	1	Conn_01x07	Pin Header 2.00mm 1x07 Vertical		Generic
+21100	J7	1	Conn_01x02	Connector 1x2  2.50mm Vertical		JST	B2B-XH-A
+20969	J6	1	Conn_01x03	Connector 1x3 2.50mm Vertical		JST	B3B-XH-A
+22363	J8	1	Conn_01x04	Connector 1x04 4.2mm Vertical		Molex	215915-1004
+20720	Q1	1	2N7002	Mosfet SOT-23 60v .5A		generic
+4478	Q2	1	SCREW 	4-40 X 3/8 PPH (Zinc, Black or SS)		generic
+6029	Q2	1	Grease	Thermal joint compound		Thermalloy or equiv	Thermalcote
+6693	Q2	1	Nut	Kepnut 4-40 		McMaster Carr	90675A005 or Equiv
+22479	Q2	1	MAC223A8X127	Triac 600v To-220F-3		WeEn	MAC223A8X127
+5493	R2, R6, R9, R14	4	10K	Resistor 1206 1% 1/4W		generic
+6284	 R17	1	0 Ohm	Resistor 1206 5% 1/4W		generic
+5485	R10, R13, R15	3	1K	Resistor 1206 5% 1/4W		generic
+8574	R11	1	360 Ohm	Resistor 2512 5% 1W		generic
+3661	R12	1	15 Ohm	Resistor 1206 5% 1/4W		generic
+5975	RV1	1	10K	Potentiometer 10K 3mm SMT Vertical		Bournes	TC33x-2-103E
+3314	RV2	1	130V	Varistor, 18mm Thru-hole		Bournes	Mov-20D201Kor D6321ZOV131RA70
+22289	RV3	1	10K	Potentiometer Single Vertical ShaftOnCenter		Alps	RK09L1140A2U
+4903	SW1	1	SW DIP x04	Dip switch 4 pos		Same Sky	DS01C-254-S-4BE
+22301	TX1	1	F20-120	Transformer 120V		Triad, Tamura	F20-120-C2	3FS-316
+8448	U3	1	atmega168P	Microprocessor:TQFP-32		MicroChip	Atmega168PB-AU	Atmega168PB-20AU
+22291	U5	1	MPXV5100GC7U	Pressure Sensor smt		NXP	MPXV5100GC6U	Use U6 as an alternative
+DNP	U6	1	MPXV5100GC6U	Pressor Sensor THRU-HOLE		NXP	MPXV5100GC7U
+2261	U7	1	MOC3023	Optoisolator Triac SMDIP-6		OnSemi, Lite-On	MOC3023SM	MOC3023S
+22468	U8	1	LM1117-5.0	IC REG LINEAR SMD:TO-252-2		Texas Instruments	LM1117IDTX-5
+20800	U9	1	TLV431	IC Shunt Reg SOT-23		Diodes Inc, Texas Instruments	TLV431BFTA	TLV431BFTA
+20746	Z1	1	MMBZ5225B	Diode Zener 3v SOT-23		generic
+	PCB	1		PCB Digital Speed Control Rev L			Imagineering	Transformer Speed Controller
+
+DNP	 R4, R19,R1,R3,R5,R18,RV4,U4,U1,U2,J3,J5

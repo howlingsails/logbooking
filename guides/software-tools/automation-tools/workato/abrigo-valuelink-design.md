@@ -6,32 +6,18 @@
 **Example Abrigo Payload:** If a proposed loan has multiple collaterals and the user triggers the webhook (via the chosen event), Abrigo can send a JSON payload containing the loan and collateral information. For instance, a payload might include the proposed loan ID and an array of collateral objects with their details (using guessed field names for illustration):
 
 ```json
+POST
+ 
+abrigo-webhook-key: dfjrtu4867fh34dfhi
+ 
 {
-  "proposedLoanId": "LN-001234",
-  "loanName": "Commercial Loan 1234",
-  "collaterals": [
-    {
-      "collateralId": "COL-1001",
-      "collateralType": "Real Estate",
-      "description": "123 Main St Property",
-      "currentValue": 500000,
-      "propertyAddress": "123 Main St",
-      "propertyCity": "Anytown",
-      "propertyState": "CA",
-      "propertyZip": "92801"
-    },
-    {
-      "collateralId": "COL-1002",
-      "collateralType": "Equipment",
-      "description": "Construction Crane",
-      "currentValue": 200000,
-      "serialNumber": "CRANE-XYZ-100",
-      "manufacturer": "ACME Corp",
-      "year": 2015
-    }
-  ]
-}
-```
+   "webhookId": "6f650693-6f71-4323-b22c-ccc7f79f8b74",
+   "webhookRequestId": "1e000712-1b71-7461-b11c-abc1f09f0b41",
+   "eventType": "LoanDescriptionUpdated",
+   "payload": {
+      "loanId": 123
+   }
+}```
 
 *Implementation notes:* In practice, if the Abrigo event payload does not include full collateral details, you can use Abrigo’s API to retrieve them (e.g. call `GET /v1/collaterals/{id}` for each collateral to get all fields ([Retrieving Customer Entered Info](https://developer.abrigo.com/docs/retrieving-widget-info#:~:text=Get%20collateral%20information))). However, using a Collateral Widget event allows you to define which fields are sent so that the webhook payload contains the necessary collateral data upfront ([Collateral Widget](https://developer.abrigo.com/docs/collateral-widget#:~:text=The%20collateral%20partner%20will%20develop,insurance%2C%20and%20other%20collateral%20services)).
 

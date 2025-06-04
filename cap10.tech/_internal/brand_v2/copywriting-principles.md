@@ -20,8 +20,9 @@ When writing marketing copy, social posts, or promotional content, follow these 
 • **Avoid Fluff:** No empty buzzwords. Each sentence must carry meaning.  
 • **Use Active Voice:** “We guide you through…” instead of “You will be guided through…”.  
 • **Use Present Tense:** “You learn how to…” not “You will learn how to…” (unless referencing a scheduled event).  
-• **Incorporate Nautical but Clear Metaphors:** Use “anchor,” “navigate,” “set sails,” but only if they serve a clear analogy. Avoid obscure terms.  
-• **Shorter Sentences:** Aim for 15–20 words per sentence. Keep punctuation simple.
+• **Incorporate Nautical but Clear Metaphors:** Use “anchor,” “navigate,” “set sails,” but only if they serve a clear analogy. Avoid obscure terms. But also use other metaphors around captains of other types in sports or industry. 
+Metaphors of sport or industry that relate to the subject matter are also acceptable. Make sure they are clear and useful
+• **Shorter Sentences, but with some longer for a role of reading:** Aim for 15–20 words per sentence. Keep punctuation simple. No dashes. No numbers in lists unless explicitly requested.
 
 **D. Avoiding Pitfalls**  
 • **No Corporate Jargon Overkill:** Don’t say “synergize,” “leverage,” or “paradigm shift.” Use plain language.  
